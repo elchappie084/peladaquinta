@@ -1,0 +1,30 @@
+SÓ RESENHA — versão 2 (protótipo)
+====================================
+
+ABRIR
+1. Extraia o ZIP.
+2. Abra index.html no navegador.
+
+REGRAS IMPLEMENTADAS NESTA VERSÃO
+- Jogador cria conta com nome, e-mail, senha e foto opcional.
+- O primeiro cadastro neste protótipo recebe perfil de administrador.
+- Apenas o administrador acessa Administração.
+- O administrador escolhe quem vai participar e define se é jogador de linha ou goleiro.
+- Goleiros aparecem em uma lista separada e não entram na contagem dos times.
+- O sorteio distribui 24 jogadores de linha em quatro equipes de seis: Azul, Amarelo, Preto e Laranja.
+- O sorteio automático é disparado quinta-feira a partir das 20h, desde que o site esteja aberto em uma sessão de administrador.
+- O administrador também pode testar o sorteio manualmente pelo botão da administração.
+- Avaliações, ranking e galeria de lances estão disponíveis como protótipo.
+
+IMPORTANTE: LIMITAÇÕES DESTA DEMONSTRAÇÃO
+Este ZIP é um protótipo front-end. Contas, senhas, fotos, avaliações, participantes e vídeos são guardados no armazenamento local do navegador. Não há banco de dados ou autenticação segura; cada dispositivo terá dados próprios. Não use senhas reais neste protótipo.
+O sorteio automático no horário depende de uma sessão de administrador com o site aberto. Em produção, isso precisa ser executado no servidor (cron/job), com banco de dados compartilhado e permissões verificadas no backend, para funcionar com o site fechado e impedir alterações no navegador.
+Para preencher os quatro times, são necessários 24 jogadores de linha. Se houver mais de 24, esta versão sorteia os primeiros 24 da lista de participantes; os restantes ficam fora do sorteio. Os goleiros são separados e não contam.
+A imagem recebida mostra o escudo, mas não contém as regras oficiais do grupo. As regras exibidas são provisórias.
+
+ATUALIZAÇÃO — NOTIFICAÇÕES, ADMs E LIMITE
+- Notificações visuais no próprio site substituem os alertas simples do navegador.
+- A primeira conta cadastrada é o administrador principal (owner).
+- Somente esse administrador principal pode promover outros jogadores a ADM pelo painel.
+- Cada rodada aceita no máximo 24 jogadores de linha. Para trocar alguém, o ADM remove primeiro e adiciona o substituto.
+- Goleiros continuam separados e não ocupam as 24 vagas.
